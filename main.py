@@ -65,7 +65,7 @@ def root(item: Item):
         if "errorMessage" in response:
             return {"error": response["errorMessage"]}
 
-        return response['messages']['content']
+        return response
 
     except Exception as e:
         # Log the error for deeper troubleshooting
